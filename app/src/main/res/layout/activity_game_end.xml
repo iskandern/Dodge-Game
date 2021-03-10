@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:gravity="center"
+    tools:context=".Activities.GameEndActivity">
+
+    <RelativeLayout
+        android:id="@+id/endGameLayoutView"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:background="@color/scoreBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/endScoreTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/score_after_game_title"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/endScoreView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/endScoreTitleView"
+            android:gravity="center"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/endMenuButtonView"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/endScoreView"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/buttonsBackground"
+            android:text="@string/menu_button"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/endRestartButtonView"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/endScoreView"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/buttonsBackground"
+            android:text="@string/restart_button"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

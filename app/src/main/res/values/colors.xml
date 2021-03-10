@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="player">#FFEB3B</color>
+    <color name="enemy">#F44336</color>
+    <color name="darkBackgroundText">#FFEB3B</color>
+    <color name="lightBackgroundText">#10504A</color>
+    <color name="buttonsBackground">#FFEB3B</color>
+    <color name="scoreBackground">#F4F1F1</color>
+    <color name="appBackground">#10504A</color>
+</resources>

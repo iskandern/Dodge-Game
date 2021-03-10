@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gameNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/game_title"
+        android:textColor="@color/darkBackgroundText"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gameNameView"
+        android:layout_marginTop="-2dp"
+        android:layout_toLeftOf="@id/scoreTitleView"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/scoreTitleView">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/startButtonView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/buttonsBackground"
+            android:text="@string/play_button"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/rulesButtonView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/buttonsBackground"
+            android:text="@string/rules_button"
+            android:textColor="@color/lightBackgroundText"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreTitleView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameNameView"
+        android:layout_alignParentRight="true"
+        android:background="@color/buttonsBackground"
+        android:gravity="center"
+        android:text="@string/score_title"
+        android:textColor="@color/lightBackgroundText"
+        android:textSize="40sp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/scoreCountView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/scoreTitleView"
+        android:layout_alignParentRight="true"
+        android:background="@color/scoreBackground"
+        android:gravity="center"
+        android:textColor="@color/lightBackgroundText"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

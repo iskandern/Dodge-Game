@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dodgeGame</string>
+    <string name="game_title">DODGE GAME</string>
+    <string name="play_button">PLAY</string>
+    <string name="rules_button">RULES</string>
+    <string name="menu_button">MENU</string>
+    <string name="restart_button">RESTART</string>
+    <string name="score_title">High Score</string>
+    <string name="score_after_game_title">YOUR SCORE</string>
+</resources>
